@@ -1,13 +1,243 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/png" href="/images/bronto.png">
-    <title>Brontosaurusrex</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brent De Clercq | Systems & Network Engineer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="script.js" defer></script>
+    <script src="script.js" async></script>
   </head>
-  <body>
-    <h1>Hello World!</h1>
-  </body>
+<body>
+    <header>
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">Brent De Clercq</div>
+                <nav>
+                    <ul>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#education">Education</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section id="hero" class="hero">
+        <div class="container">
+            <h1>Brent De Clercq</h1>
+            <h2>Systems & Network Engineer</h2>
+            <p>Building robust, scalable infrastructure solutions with a focus on security and performance optimization.</p>
+            <a href="#contact" class="cta-button">Get In Touch</a>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Hello! I'm a systems and network engineer with a passion for designing and implementing secure, efficient IT infrastructure. Currently finishing my degree, I specialize in network architecture, system administration, and cloud solutions.</p>
+                    <p>My background includes hands-on experience with various networking protocols, server management, and security implementations. I'm constantly learning and adapting to new technologies to stay at the forefront of the rapidly evolving IT landscape.</p>
+                    <p>When I'm not configuring networks or troubleshooting systems, you can find me participating in CTF competitions, contributing to open-source projects, or exploring the latest advancements in cloud technology.</p>
+                </div>
+                <div class="about-image">
+                    <img src="./img/hoofd.jpg" alt="Your Profile" class="profile-image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="container">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h3>Networking</h3>
+                    <div class="skill-list">
+                        <span class="skill-tag">TCP/IP</span>
+                        <span class="skill-tag">Routing & Switching</span>
+                        <span class="skill-tag">VLANs</span>
+                        <span class="skill-tag">Firewalls</span>
+                        <span class="skill-tag">VPNs</span>
+                        <span class="skill-tag">DNS</span>
+                        <span class="skill-tag">DHCP</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Systems Administration</h3>
+                    <div class="skill-list">
+                        <span class="skill-tag">Linux</span>
+                        <span class="skill-tag">Windows Server</span>
+                        <span class="skill-tag">Active Directory</span>
+                        <span class="skill-tag">Virtualization</span>
+                        <span class="skill-tag">Containerization</span>
+                        <span class="skill-tag">Backup Solutions</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Cloud Technologies</h3>
+                    <div class="skill-list">
+                        <span class="skill-tag">AWS</span>
+                        <span class="skill-tag">Azure</span>
+                        <span class="skill-tag">IaaS</span>
+                        <span class="skill-tag">PaaS</span>
+                        <span class="skill-tag">Cloud Security</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Security</h3>
+                    <div class="skill-list">
+                        <span class="skill-tag">Network Security</span>
+                        <span class="skill-tag">IDS/IPS</span>
+                        <span class="skill-tag">Vulnerability Assessment</span>
+                        <span class="skill-tag">Security Auditing</span>
+                        <span class="skill-tag">Encryption</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Automation & Scripting</h3>
+                    <div class="skill-list">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">Bash</span>
+                        <span class="skill-tag">PowerShell</span>
+                        <span class="skill-tag">Ansible</span>
+                        <span class="skill-tag">Terraform</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Monitoring & Management</h3>
+                    <div class="skill-list">
+                        <span class="skill-tag">SNMP</span>
+                        <span class="skill-tag">Nagios</span>
+                        <span class="skill-tag">Zabbix</span>
+                        <span class="skill-tag">Grafana</span>
+                        <span class="skill-tag">Prometheus</span>
+                        <span class="skill-tag">Log Analysis</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <img src="/api/placeholder/400/200" alt="Network Project" class="project-image">
+                    <div class="project-info">
+                        <h3 class="project-title">Enterprise Network Architecture</h3>
+                        <p>Designed and implemented a scalable network infrastructure for a mid-sized organization, including secure VLANs, redundant routing, and comprehensive security measures.</p>
+                        <div class="project-tech">
+                            <span>Cisco</span>
+                            <span>BGP</span>
+                            <span>OSPF</span>
+                            <span>Firewall</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="/api/placeholder/400/200" alt="Cloud Project" class="project-image">
+                    <div class="project-info">
+                        <h3 class="project-title">Cloud Migration Strategy</h3>
+                        <p>Developed and executed a migration plan to transition on-premises infrastructure to a hybrid cloud environment, resulting in improved reliability and cost efficiency.</p>
+                        <div class="project-tech">
+                            <span>AWS</span>
+                            <span>Terraform</span>
+                            <span>VPC</span>
+                            <span>IAM</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="/api/placeholder/400/200" alt="Automation Project" class="project-image">
+                    <div class="project-info">
+                        <h3 class="project-title">Infrastructure Automation Suite</h3>
+                        <p>Created a comprehensive automation framework for network configuration management, system provisioning, and compliance monitoring using modern DevOps practices.</p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>Ansible</span>
+                            <span>Git</span>
+                            <span>CI/CD</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="education">
+        <div class="container">
+            <h2 class="section-title">Education & Certifications</h2>
+            <div class="education-container">
+                <div class="education-item">
+                    <div class="education-title">
+                        <div class="education-degree">B.S. in Network Engineering</div>
+                        <div class="education-date">2021 - 2025</div>
+                    </div>
+                    <div class="education-institution">Your University Name</div>
+                    <p>Focused on advanced networking concepts, system administration, and cybersecurity. Maintained a 3.8 GPA while participating in the university's cybersecurity club.</p>
+                </div>
+                <div class="education-item">
+                    <div class="education-title">
+                        <div class="education-degree">Cisco Certified Network Associate (CCNA)</div>
+                        <div class="education-date">2023</div>
+                    </div>
+                    <p>Certified in implementing and administering Cisco networking technologies including network fundamentals, network access, IP connectivity, IP services, security, and automation.</p>
+                </div>
+                <div class="education-item">
+                    <div class="education-title">
+                        <div class="education-degree">CompTIA Security+</div>
+                        <div class="education-date">2024</div>
+                    </div>
+                    <p>Demonstrated proficiency in network security, compliance and operation security, threats and vulnerabilities, application, data, and host security, access control, and identity management.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-form">
+                <form>
+                    <div class="form-group">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" id="name" class="form-input" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" id="email" class="form-input" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject" class="form-label">Subject</label>
+                        <input type="text" id="subject" class="form-input" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea id="message" class="form-textarea" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-button">Send Message</button>
+                </form>
+                <div class="social-links">
+                    <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-icon"><i class="far fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Brent De Clercq. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
 </html>
