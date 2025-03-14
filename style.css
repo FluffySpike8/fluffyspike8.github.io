@@ -398,3 +398,38 @@ footer p {
         grid-template-columns: 1fr;
     }
 }
+
+/* Update skill category title color (h3) to white */
+.skill-category h3 {
+    color: var(--text-primary); /* Changed from var(--accent) to white text */
+    margin-bottom: 1rem;
+}
+
+/* Add hover effect to skill category cards */
+.skill-category {
+    background-color: var(--bg-secondary);
+    padding: 2rem;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+}
+
+.skill-category:hover {
+    transform: translateY(-5px);
+}
+
+/* Add hover effect to individual skill tags */
+.skill-tag {
+    background-color: rgba(100, 255, 218, 0.1);
+    color: var(--accent);
+    padding: 0.4rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    transition: var(--transition);
+}
+
+.skill-tag:hover {
+    background-color: rgba(100, 255, 218, 0.2);
+    transform: scale(1.05);
+    cursor: default;
+}
