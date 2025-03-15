@@ -414,6 +414,30 @@ footer p {
     .skills-container {
         grid-template-columns: 1fr;
     }
+
+    nav ul {
+        display: none;
+    }
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+}
+
+/* Hide hamburger on screens larger than 768px */
+@media (min-width: 769px) {
+    .hamburger {
+      display: none;
+    }
+
+    nav ul {
+      display: flex; /* Show the nav items in a row on larger screens */
+    }
+}
+
+/* Show the nav when hamburger is clicked */
+.nav-active ul {
+    display: block;
 }
 
 /* Update skill category title color (h3) to white */
@@ -472,3 +496,39 @@ footer p {
 ::-webkit-scrollbar-thumb:hover {
     background: #777777; /* Lighter gray on hover */
 }
+
+
+/* Center nav menu on larger screens (PC) */
+@media (min-width: 769px) {
+    .navbar {
+      display: flex;
+      justify-content: space-between; /* Keep the logo on the left and the menu centered */
+      width: 100%;
+    }
+  
+    .logo {
+      margin-right: auto; /* Ensure the logo stays on the left */
+    }
+  
+    nav {
+      display: flex;
+      justify-content: center; /* Center the nav items */
+      flex-grow: 1; /* Allow the nav to take available space */
+    }
+  
+    nav ul {
+      display: flex; /* Align items in a row */
+      list-style: none;
+      padding: 0;
+    }
+  
+    nav ul li {
+      margin: 0 15px; /* Space between the items */
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+}
+  

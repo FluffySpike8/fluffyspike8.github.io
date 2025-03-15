@@ -9,3 +9,8 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 });
 
 document.getElementById("year").textContent = new Date().getFullYear();
+
+function toggleMenu() {
+    document.querySelector('nav').classList.toggle('nav-active');
+  }
+  
