@@ -433,3 +433,26 @@ footer p {
     transform: scale(1.05);
     cursor: default;
 }
+
+/* Modern styled scrollbar - Gray with rounded edges */
+/* For Webkit browsers (Chrome, Safari, Edge) */
+::-webkit-scrollbar {
+    width: 0.9rem; /* Even thicker scrollbar */
+}
+
+::-webkit-scrollbar-track {
+    background: var(--bg-primary);
+    border-radius: 10px;
+    margin: 5px 0; /* Add some space at top and bottom */
+}
+
+::-webkit-scrollbar-thumb {
+    background: #5a5a5a; /* Gray color */
+    border-radius: 10px; /* Rounded corners */
+    border: 4px solid var(--bg-primary); /* Creates padding effect - makes the visible part smaller but maintains roundness */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #777777; /* Lighter gray on hover */
+}
+
