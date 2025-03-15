@@ -456,3 +456,26 @@ footer p {
     background: #777777; /* Lighter gray on hover */
 }
 
+.education-container a{
+    color: var(--text-primary);
+    text-decoration: none;
+    font-size: 1rem;
+    transition: var(--transition);
+}
+
+.education-container a:hover {
+    color: var(--accent);
+}
+
+/* Add hover effect to education category cards */
+.education-item {
+    background-color: var(--bg-secondary);
+    padding: 2rem;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+}
+
+.education-item:hover {
+    transform: translateY(-5px);
+}
