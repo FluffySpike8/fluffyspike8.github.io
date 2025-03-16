@@ -533,6 +533,10 @@ footer p {
   .hamburger {
     display: block;
   }
+
+  header {
+    padding: 0;
+  }
 }
 
 @media (min-width: 769px) {
