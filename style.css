@@ -383,41 +383,44 @@ footer p {
     font-size: 0.9rem;
 }
 
-/* Media Queries */
 @media screen and (max-width: 768px) {
     .navbar {
-        flex-direction: column;
-        gap: 1rem;
+        flex-direction: row; /* Change to row instead of column */
+        justify-content: space-between; /* This spreads items to opposite ends */
+        align-items: center;
+        padding: 1rem;
     }
-
+    
+    /* Keep your other mobile styles */
     .hero h1 {
         font-size: 2.5rem;
     }
-
+    
     .about-content {
         flex-direction: column;
     }
-
+    
     .about-image {
-        order: 1; /* Moves the image below the text */
+        order: 1;
         margin-top: 2rem;
     }
-
+    
     .about-text {
-        order: 2; /* Keeps the text on top */
+        order: 2;
     }
-
+    
     .projects-grid {
         grid-template-columns: 1fr;
     }
-
+    
     .skills-container {
         grid-template-columns: 1fr;
     }
-
+    
     nav ul {
         display: none;
     }
+    
     .hamburger {
         display: block;
         cursor: pointer;
