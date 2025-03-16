@@ -22,9 +22,17 @@ document.getElementById("year").textContent = new Date().getFullYear();
 document.addEventListener("DOMContentLoaded", function () {
   const hamburger = document.querySelector(".hamburger");
   const nav = document.querySelector("nav");
+  const navLinks = document.querySelectorAll("nav ul li a"); // Select all menu links
 
   hamburger.addEventListener("click", function () {
     hamburger.classList.toggle("active");
     nav.classList.toggle("nav-active");
+  });
+
+  navLinks.forEach((link) => {
+    link.addEventListener("click", function () {
+      hamburger.classList.remove("active");
+      nav.classList.remove("nav-active");
+    });
   });
 });
