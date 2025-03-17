@@ -36,3 +36,19 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+
+function loadFontAwesome() {
+  const link = document.createElement("link");
+  link.href =
+    "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css";
+  link.rel = "stylesheet";
+  link.type = "text/css";
+  document.head.appendChild(link);
+}
+
+// Load Font Awesome after the page has loaded
+if (window.addEventListener) {
+  window.addEventListener("load", loadFontAwesome, false);
+} else if (window.attachEvent) {
+  window.attachEvent("onload", loadFontAwesome);
+}
