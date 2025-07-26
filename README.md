@@ -1,2 +1,2 @@
 # fluffyspike8.github.io
-My personal website
+This is the repository for my portfolio site at [dcbrent.com](dcbrent.com)
